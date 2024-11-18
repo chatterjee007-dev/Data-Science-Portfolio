@@ -124,7 +124,7 @@ game_play()
 6. **Multiplayer Option** :
    - Allow two players to play against each other on the same device or over the network.
 
-
+- You can view this project on GitHub: [Data-Science-Portfolio](https://github.com/chatterjee007-dev/Data-Science-Portfolio/tree/main) under the directory **Python/Project_01_Rock_Paper_Scissors/Rock_Paper_Scissors.ipynb**.
 
 
 
