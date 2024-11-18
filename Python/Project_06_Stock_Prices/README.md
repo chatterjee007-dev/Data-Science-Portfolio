@@ -1,6 +1,6 @@
 # Python Project: Comparing Stock Prices
 
-## Description
+## Project Overview
 This project compares the stock prices of APPLE, GOOGLE, MICROSOFT, and AMAZON. It retrieves historical stock prices, calculates percentage changes over a specified period, and identifies the best-performing stock. Additionally, it analyzes trends in the data.
 
 ## Key Features
@@ -8,6 +8,18 @@ This project compares the stock prices of APPLE, GOOGLE, MICROSOFT, and AMAZON. 
 - Calculates percentage change in stock prices for each company.
 - Identifies the company with the best stock performance.
 - Displays historical stock prices to analyze trends and patterns.
+
+## Libraries Used
+- **pandas**: For data manipulation and analysis.
+- **pandas_datareader**: For retrieving stock data from sources like Yahoo Finance.
+- **datetime**: For specifying the date range for stock data retrieval.
+
+## Code Explanation
+The project performs the following steps:
+1. **Stock Data Retrieval**: The program retrieves stock data for Apple, Google, Microsoft, and Amazon over the year 2023, using their respective stock symbols.
+2. **Percentage Change Calculation**: It calculates the percentage change in stock prices from the beginning to the end of the year for each company.
+3. **Best Performer Identification**: The program identifies which company's stock performed the best during the period.
+4. **Historical Data Display**: The historical stock prices are displayed to analyze trends or patterns over the specified time frame.
 
 ## Code Structure
 - **Importing Libraries**: Import necessary libraries for data retrieval and handling.
@@ -17,6 +29,7 @@ This project compares the stock prices of APPLE, GOOGLE, MICROSOFT, and AMAZON. 
 - **Percentage Change Calculation**: Computes and displays percentage changes in stock prices.
 - **Trend Analysis**: Shows historical stock prices for trend exploration.
 
+### Code Snippet
 ```python
 import pandas as pd
 import pandas_datareader.data as web
@@ -61,6 +74,12 @@ for company, data in stock_data.items():
     print(data.head())
 ```
 
+## Installation
+- To run this project, you will need to install the required libraries. You can install them using pip:
+```bash
+pip install pandas pandas_datareader
+```
+
 ## Prerequisites  
 - Python 3.x installed on your machine.  
 
@@ -78,16 +97,19 @@ for company, data in stock_data.items():
    jupyter notebook Comparing_Stock_Prices.ipynb
 
 ## Sample Run
-
 ### Percentage Change in Stock Prices
 ```python
-Percentage change in stock prices:
 Apple: -35.04%
 Google: -36.20%
 Microsoft: -36.29%
 Amazon: -43.52%
-Best performer: Apple with -35.04% change.
 ```
+
+### Best performer :
+```csharp
+Apple with -35.04% change.
+```
+
 ## Historical Stock Prices (Sample Output)
 - ### Apple
 ```python
