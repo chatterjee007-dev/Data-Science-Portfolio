@@ -43,11 +43,11 @@ companies = {
     'Amazon': 'AMZN'
 }
 
-# Defining date range for data retrieval
+# Date Range Definition
 start_date = datetime(2023, 1, 1)
 end_date = datetime(2023, 12, 31)
 
-# Fetching stock data
+# Retrieve stock data
 stock_data = {}
 for company, symbol in companies.items():
     df = web.DataReader(symbol, 'stooq', start_date, end_date)
@@ -105,9 +105,9 @@ Microsoft: -36.29%
 Amazon: -43.52%
 ```
 
-### Best performer :
-```csharp
-Apple with -35.04% change.
+### Best Performer:
+```python
+Apple: -35.04% (Best Performer)
 ```
 
 ## Historical Stock Prices (Sample Output)
