@@ -29,7 +29,7 @@ The project performs the following steps:
 - **Percentage Change Calculation**: Computes and displays percentage changes in stock prices.
 - **Trend Analysis**: Shows historical stock prices for trend exploration.
 
-### Code Snippet
+## Code Snippet
 ```python
 import pandas as pd
 import pandas_datareader.data as web
