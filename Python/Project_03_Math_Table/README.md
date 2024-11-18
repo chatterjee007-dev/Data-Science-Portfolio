@@ -70,5 +70,4 @@ Enter a number: 49
 7. **Input Validation** :
    - Improve input validation to handle non-integer inputs gracefully.
 
-- **You can view this project on GitHub: [Data-Science-Portfolio] under the directory Python/Project_03_Math_Table
-/Creating_Math_Table.ipynb**.
+- **You can view this project on GitHub: [[Data-Science-Portfolio]](https://github.com/chatterjee007-dev/Data-Science-Portfolio/tree/main) under the directory Python/Project_03_Math_Table/Creating_Math_Table.ipynb**.
