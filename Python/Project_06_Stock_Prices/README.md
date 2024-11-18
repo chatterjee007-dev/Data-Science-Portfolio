@@ -152,3 +152,5 @@ Date
    - Compare the performance of these companies against their respective sectors.  
 5. **Predictive Analysis**:  
    - Implement machine learning models to forecast future stock price trends.  
+
+- You can view this project on GitHub: [Data-Science-Portfolio](https://github.com/chatterjee007-dev/Data-Science-Portfolio/tree/main) under the directory **Python/Project_06_Stock_Prices/Comparing_Stock_Prices.ipynb**.
