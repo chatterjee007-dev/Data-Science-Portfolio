@@ -1,31 +1,30 @@
-# Python Project: Rock-Paper-Scissors  
+## Project Overview
+Write a program that allows the user to play a game of Rock Paper Scissors against the computer. The program should prompt the user to enter their choice (Rock, Paper, or Scissors) and then randomly generate a choice for the computer. The program should then determine the winner based on the following rules:
+- Rock beats Scissors
+- Scissors beats Paper
+- Paper beats Rock
 
-## Description  
-This project implements the classic game of Rock-Paper-Scissors, allowing a user to play against the computer. The game follows standard rules:  
-- **Rock beats Scissors**  
-- **Scissors beats Paper**  
-- **Paper beats Rock**  
+## Key Features
+- User can play Rock Paper Scissors against the computer.
+- Computer randomly selects its choice.
+- Determines the winner based on predefined rules.
 
-The program uses Python's `random` module to generate the computer's choice and determines the winner based on predefined rules.  
+## Libraries Used
+- **random**: A Python module that generates random variables based on the input that we give.
 
-## Tools Used  
-- **Python** : The programming language used to develop the project.  
-- **Random Module** : To generate random choices for the computer.  
+## Code Explanation
+The program uses the `random` module to randomly select the computer's choice and compares it against the user's input to determine the winner.
 
-## How It Works  
-1. The user is prompted to enter their choice (Rock, Paper, or Scissors).  
-2. The computer generates a random choice from the list: `['rock', 'paper', 'scissor']`.  
-3. The program compares the user's choice with the computer's choice using the game rules to determine the winner.  
-4. The result is displayed, and the user is asked whether they want to play again.  
+## Code Structure
+- **Importing Libraries**: Import necessary libraries for random choice generation.
+- **Defining Choices**: Create a list of choices.
+- **Function to Get Computer's Choice**: Define a function to randomly select a choice for the computer.
+- **Function to Get User's Choice**: Define a function to prompt the user to enter their choice.
+- **Function to Determine Winner**: Define a function to determine the winner based on the user's and computer's choices.
+- **Main Game Function**: Define the main game function to keep the game running until the user decides to stop.
+- **Run the Game**: Call the main game function to start the game.
 
-## Code Structure  
-- **Choices Definition**: The valid options are stored in a list: `['rock', 'paper', 'scissor']`.  
-- **Functions**:  
-  - `get_computer_choice()` : Returns a random choice for the computer.  
-  - `get_user_choice()` : Prompts the user for their choice and validates the input.  
-  - `determine_winner(user_choice, computer_choice)` : Determines the outcome based on game rules.  
-  - `game_play()` : Orchestrates the game, handles inputs, and loops until the user decides to stop.
-
+## Code Snippet
 ```python
 import random
 
@@ -105,19 +104,26 @@ game_play()
    It's a tie!  
    Do you want to play again? (y/n): n
    ``` 
+## Explanation
+In the output, we can see the user can play Rock Paper Scissors against the computer. The computer randomly selects its choice, and the program determines the winner based on the rules.
+
+## Insights
+- The program effectively demonstrates the use of the `random` module for generating random choices.
+- The game logic is simple yet demonstrates control flow with if-elif-else statements.
+- The approach can be extended to include more complex game logic or additional features.
 
 ## Future Enhancements
 
-1. **Add More Game Modes** : 
-   - Introduce additional game modes like "Rock-Paper-Scissors-Lizard-Spock" for more variety.
-   
-2. **Improve User Interface** :
+1. **Improve User Interface**:
    - Create a graphical user interface (GUI) using libraries such as Tkinter or PyQt to make the game more interactive and user-friendly.
 
-3. **Track Scores** :
+2. **Track Scores**:
    - Implement a feature that tracks the player's wins, losses, and ties over multiple rounds.
 
-4. **Difficulty Levels** :
+3. **Add More Game Modes**:
+   - Introduce additional game modes like "Rock-Paper-Scissors-Lizard-Spock" for more variety.
+
+4. **Difficulty Levels**:
    - Add difficulty levels where the computer can make smarter choices based on previous player behavior.
 
 5. **Leaderboard** :
@@ -126,6 +132,7 @@ game_play()
 6. **Multiplayer Option** :
    - Allow two players to play against each other on the same device or over the network.
 
+## View on GitHub
 - You can view this project on GitHub: [Data-Science-Portfolio](https://github.com/chatterjee007-dev/Data-Science-Portfolio/tree/main) under the directory **Python/Project_01_Rock_Paper_Scissors/Rock_Paper_Scissors.ipynb**.
 
 
