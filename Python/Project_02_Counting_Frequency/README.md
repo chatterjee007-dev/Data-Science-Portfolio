@@ -64,6 +64,9 @@ Length of highest frequency word: ('write', 5)
 
 In the output, we can see 'write' is the word that appeared most frequently, and its length is 5.
 
+## Prerequisites  
+- Python 3.x installed on your machine.  
+
 ## Installation and Usage
 1. Clone this repository :
    git clone https://github.com/chatterjee007-dev/Data-Science-Portfolio.git
