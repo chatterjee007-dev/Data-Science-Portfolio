@@ -44,6 +44,7 @@ multiplication(num)  # Calling the function we have defined
    jupyter notebook Creating_Math_Table.ipynb
 
 ## Sample Run
+```python
 Enter a number: 49
 1 x 49 = 49
 2 x 49 = 98
@@ -55,6 +56,7 @@ Enter a number: 49
 8 x 49 = 392
 9 x 49 = 441
 10 x 49 = 490
+```
 
 ## Future Enhancements
 
