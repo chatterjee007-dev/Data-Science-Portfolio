@@ -33,6 +33,7 @@ for name, info in details.items():  # This line iterates through key-value pairs
 ```
 
 ## Sample Run
+```python
 How many people? 2
 Enter name of person 1: John
 Enter age of person 1: 30
@@ -44,6 +45,7 @@ Enter occupation of person 2: Teacher
 Details of people: 
 Name: John, Age: 30, Occupation: Engineer
 Name: Sarah, Age: 25, Occupation: Teacher
+```
 
 ## Prerequisites  
 - Python 3.x installed on your machine.  
