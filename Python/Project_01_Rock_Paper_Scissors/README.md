@@ -85,7 +85,7 @@ game_play()
 
 2. Navigate to the project directory :
    ```bash
-   cd Data-Science-Portfolio/Python/Project_01_Rock_Paper_Scissors/Rock_Paper_Scissors.ipynb
+   cd Data-Science-Portfolio/Python/Project_01_Rock_Paper_Scissors
 
 3. Run the script :
    ```bash
