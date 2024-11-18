@@ -57,13 +57,6 @@ if __name__ == "__main__":
     print("Length of highest frequency word:", high_frequency_word)
 ```
 
-## Sample Run
-Enter a string: write write write all the number from from from 1 to 100
-{'write': 3, 'all': 1, 'the': 1, 'number': 1, 'from': 3, '1': 1, 'to': 1, '100': 1}
-Length of highest frequency word: ('write', 5)
-
-In the output, we can see 'write' is the word that appeared most frequently, and its length is 5.
-
 ## Prerequisites  
 - Python 3.x installed on your machine.  
 
@@ -77,6 +70,15 @@ In the output, we can see 'write' is the word that appeared most frequently, and
 3. Run the script :
    ```bash
    jupyter notebook Counting_Frequency.ipynb
+
+## Sample Run
+```python
+Enter a string: write write write all the number from from from 1 to 100
+{'write': 3, 'all': 1, 'the': 1, 'number': 1, 'from': 3, '1': 1, 'to': 1, '100': 1}
+Length of highest frequency word: ('write', 5)
+```
+
+- In the output, we can see 'write' is the word that appeared most frequently, and its length is 5.
    
 ## Future Enhancements
 1. **Handle Punctuation** :
