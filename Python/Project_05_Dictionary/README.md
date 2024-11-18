@@ -24,7 +24,7 @@ The project performs the following steps:
 - **Dictionary Creation**: Inside the function, a dictionary `people_deets` is populated with user input.
 - **Displaying Data**: The function returns the dictionary, and a loop prints each person's details.
 
-### Code Snippet
+## Code Snippet
 ```python
 def people_details():
     num_people = int(input("How many people? "))  # Taking input of number of people
