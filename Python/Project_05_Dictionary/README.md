@@ -73,4 +73,4 @@ Name: Sarah, Age: 25, Occupation: Teacher
 4. **Persistent Storage**:
    - Save the dictionary to a file (e.g., CSV or JSON) and load it when the program starts.
      
-- **You can view this project on GitHub: [[Data-Science-Portfolio]](https://github.com/chatterjee007-dev/Data-Science-Portfolio/tree/main) under the directory Python/Project_05_Dictionary/Dictionary.ipynb.**
+- You can view this project on GitHub: [[Data-Science-Portfolio]](https://github.com/chatterjee007-dev/Data-Science-Portfolio/tree/main) under the directory **Python/Project_05_Dictionary/Dictionary.ipynb.**
