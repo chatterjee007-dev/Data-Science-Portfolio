@@ -1,22 +1,29 @@
-# Python Project : Creating Mathematical Table of Any Number
+# Python Project: Creating Mathematical Table of Any Number
 
-## Description
-This project implements a program that takes an integer as input and creates a mathematical table of that number.
+## Project Overview
+This project is designed to generate a multiplication table for any given integer. The program takes an integer as input and displays its multiplication table from 1 to 10.
 
-### Example
-1 x number = result 2 x number = result 3 x number = result ... 10 x number = result
+## Key Features
+- User-friendly input for any integer.
+- Generates a multiplication table from 1 to 10.
+- Prints results in a formatted table.
 
-## Tools Used
-- **Python**: The programming language used to develop the project.
+## Libraries Used
+- **Python**: The programming language used to implement this project.
+- No additional libraries are required for this project, as it's based solely on Python's built-in functions.
 
-## How It Works
-1. The user inputs a number.
-2. The program multiplies the input number by each number from 1 to 10.
-3. The results are printed in a formatted table.
+## Code Explanation
+The program defines a function `multiplication(num)` that:
+1. Accepts an integer as input.
+2. Uses a for loop to multiply the input by numbers 1 to 10.
+3. Prints the results in a table format.
 
 ## Code Structure
-- **Function Definition**: The function `multiplication(num)` takes an input number and prints its multiplication table from 1 to 10.
+1. **Function Definition**: `multiplication(num)` - takes the input number and multiplies it with each number from 1 to 10.
+2. **Input Handling**: Takes input from the user to create the multiplication table for the given number.
+3. **Output**: Displays the multiplication table in a formatted way.
 
+## Code Snippet
 ```python
 def multiplication(num):
     for i in range(1, 11):  # Assigning numbers one by one to 'i' from 1 to 10 using a for loop
@@ -58,6 +65,15 @@ Enter a number: 49
 10 x 49 = 490
 ```
 
+## Explanation
+- The program asks the user to enter an integer.
+- It then multiplies that number by each of the numbers from 1 to 10 and prints the result in a formatted manner.
+
+## Insights
+- This project demonstrates the ability to work with loops and user input in Python.
+- It provides a simple way to automate the creation of a multiplication table for any number.
+
+
 ## Future Enhancements
 
 1. **Extend Range** :
@@ -72,4 +88,5 @@ Enter a number: 49
 7. **Input Validation** :
    - Improve input validation to handle non-integer inputs gracefully.
 
+## View on GitHub
 - You can view this project on GitHub: [[Data-Science-Portfolio]](https://github.com/chatterjee007-dev/Data-Science-Portfolio/tree/main) under the directory **Python/Project_03_Math_Table/Creating_Math_Table.ipynb**.
