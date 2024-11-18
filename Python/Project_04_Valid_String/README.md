@@ -80,3 +80,6 @@ Is it a valid string? - NO
 
 4. **Performance Optimization**:
    - Optimize the code for handling very large input strings efficiently.
+
+- **You can view this project on GitHub: [Data-Science-Portfolio] under the directory Python/Project_04_Valid_String
+/Finding_Valid_String.ipynb.**.
