@@ -26,12 +26,16 @@ The program defines a function `multiplication(num)` that:
 ## Code Snippet
 ```python
 def multiplication(num):
-    for i in range(1, 11):  # Assigning numbers one by one to 'i' from 1 to 10 using a for loop
-        result = i * num
-        print(i, 'x', num, '=', result)  # Multiplying each number from 1 to 10 with the input number and printing the result
+    """
+    This function generates and prints the multiplication table of a given number.
+    """
+    for i in range(1, 11):  # Iterates through numbers 1 to 10 to create the table
+        result = i * num  # Calculates the product of the current number (i) and the input number (num)
+        print(f"{i} x {num} = {result}")  # Outputs the multiplication in a formatted string
 
-num = int(input("Enter a number: "))  # Taking input from the user
-multiplication(num)  # Calling the function we have defined
+# Prompting the user for a number to generate its multiplication table
+num = int(input("Enter a number: "))  
+multiplication(num)  # Calls the function to display the multiplication table
 ```
 
 ## Prerequisites  
