@@ -24,7 +24,56 @@ The program uses Python's `random` module to generate the computer's choice and 
   - `get_computer_choice()` : Returns a random choice for the computer.  
   - `get_user_choice()` : Prompts the user for their choice and validates the input.  
   - `determine_winner(user_choice, computer_choice)` : Determines the outcome based on game rules.  
-  - `game_play()` : Orchestrates the game, handles inputs, and loops until the user decides to stop.  
+  - `game_play()` : Orchestrates the game, handles inputs, and loops until the user decides to stop.
+
+```python
+import random
+
+# Defining the valid choices
+choices = ['rock', 'paper', 'scissor']
+
+# Function to get the computer's random choice
+def get_computer_choice():
+    return random.choice(choices)
+
+# Function to get the user's choice
+def get_user_choice():
+    user_choice = input("Enter your choice, Rock paper or scissor? ").lower()
+    if user_choice in choices:
+        return user_choice
+    else:
+        return "Invalid choice. Please try again."
+
+# Function to determine the winner based on game rules
+def determine_winner(user_choice, computer_choice):
+    if user_choice == computer_choice:
+        return "It's a tie!"
+    elif (user_choice == 'rock' and computer_choice == 'scissor') or \
+         (user_choice == 'scissor' and computer_choice == 'paper') or \
+         (user_choice == 'paper' and computer_choice == 'rock'):
+        return "You win!"
+    else:
+        return "Computer wins!"
+
+# Function to play the game
+def game_play():
+    print("Let's play!")
+
+    while True:
+        user_choice = get_user_choice()
+        computer_value = get_computer_choice()
+        print(f"You chose: {user_choice}")  # Prints the user's choice
+        print(f"Computer chose: {computer_value}")  # Prints the computer's choice
+        result = determine_winner(user_choice, computer_value)  # Determines and prints the result
+        print(result)
+
+        play_again = input("Do you want to play again? (y/n): ").lower()
+        if play_again != "y":  # Breaks the loop if the user doesn't want to play again
+            break
+
+# Runs the game
+game_play()
+```
 
 ## Prerequisites  
 - Python 3.x installed on your machine.  
