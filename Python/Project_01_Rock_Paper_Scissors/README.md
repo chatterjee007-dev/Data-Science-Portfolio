@@ -92,17 +92,19 @@ game_play()
    jupyter notebook Rock_Paper_Scissors.ipynb
 
   ## Sample Run
-    Let's play!  
-    Enter your choice, Rock paper or scissor? rock  
-    You chose: rock  
-    Computer chose: scissor  
-    You win!  
-    Do you want to play again? (y/n): y  
-    Enter your choice, Rock paper or scissor? paper  
-    You chose: paper  
-    Computer chose: paper  
-    It's a tie!  
-    Do you want to play again? (y/n): n  
+  ```python
+   Let's play!  
+   Enter your choice, Rock paper or scissor? rock  
+   You chose: rock  
+   Computer chose: scissor  
+   You win!  
+   Do you want to play again? (y/n): y  
+   Enter your choice, Rock paper or scissor? paper  
+   You chose: paper  
+   Computer chose: paper  
+   It's a tie!  
+   Do you want to play again? (y/n): n
+   ``` 
 
 ## Future Enhancements
 
