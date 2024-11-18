@@ -1,50 +1,68 @@
-## Project Overview
-Write a program that allows the user to play a game of Rock Paper Scissors against the computer. The program should prompt the user to enter their choice (Rock, Paper, or Scissors) and then randomly generate a choice for the computer. The program should then determine the winner based on the following rules:
-- Rock beats Scissors
-- Scissors beats Paper
-- Paper beats Rock
+# PYTHON PROJECT: ROCK-PAPER-SCISSORS  
 
-## Key Features
-- User can play Rock Paper Scissors against the computer.
-- Computer randomly selects its choice.
-- Determines the winner based on predefined rules.
+## Project Overview  
+This project is a Python-based implementation of the classic game *Rock-Paper-Scissors*. The program allows the user to play the game against the computer. The computer's choice is generated randomly, and the winner is determined based on predefined rules. The goal is to provide an engaging and interactive experience for the user.  
 
-## Libraries Used
-- **random**: A Python module that generates random variables based on the input that we give.
+## Key Features  
+- Interactive gameplay between the user and computer.  
+- Random choice generation for the computer using the `random` module.  
+- Well-defined game logic based on the rules of Rock-Paper-Scissors.  
+- Continuous gameplay until the user decides to exit.  
+- Handles invalid user inputs gracefully.  
 
-## Code Explanation
-The program uses the `random` module to randomly select the computer's choice and compares it against the user's input to determine the winner.
+## Libraries Used  
+- **random**: Used to generate the computer's random choice from the list of options.  
 
-## Code Structure
-- **Importing Libraries**: Import necessary libraries for random choice generation.
-- **Defining Choices**: Create a list of choices.
-- **Function to Get Computer's Choice**: Define a function to randomly select a choice for the computer.
-- **Function to Get User's Choice**: Define a function to prompt the user to enter their choice.
-- **Function to Determine Winner**: Define a function to determine the winner based on the user's and computer's choices.
-- **Main Game Function**: Define the main game function to keep the game running until the user decides to stop.
-- **Run the Game**: Call the main game function to start the game.
+## Code Explanation  
+The project includes multiple functions to modularize the implementation:  
+1. **get_computer_choice**: Generates a random choice for the computer from the list `['rock', 'paper', 'scissor']`.  
+2. **get_user_choice**: Prompts the user to input their choice, validates it, and returns it in lowercase for consistency.  
+3. **determine_winner**: Compares the choices of the user and computer to determine the winner based on predefined rules.  
+4. **game_play**: Facilitates the game loop, allowing users to play multiple rounds until they decide to stop.  
 
-## Code Snippet
+## Code Structure  
+The code is structured into modular functions, ensuring clarity, reusability, and maintainability:  
+1. `get_computer_choice`  
+2. `get_user_choice`  
+3. `determine_winner`  
+4. `game_play`  
+
+## Code Snippet  
 ```python
-import random
+import random  # Importing the random module for generating computer's choice
 
-# Defining the valid choices
+# List of possible choices for the game
 choices = ['rock', 'paper', 'scissor']
 
-# Function to get the computer's random choice
 def get_computer_choice():
+    """
+    Generates the computer's choice randomly from the list of choices.
+    Returns:
+        str: Computer's choice ('rock', 'paper', or 'scissor').
+    """
     return random.choice(choices)
 
-# Function to get the user's choice
 def get_user_choice():
-    user_choice = input("Enter your choice, Rock paper or scissor? ").lower()
+    """
+    Prompts the user for their choice and validates it.
+    Returns:
+        str: User's choice if valid; otherwise, an error message.
+    """
+    user_choice = input("Enter your choice (rock, paper, scissor): ").lower()
     if user_choice in choices:
         return user_choice
     else:
         return "Invalid choice. Please try again."
 
-# Function to determine the winner based on game rules
 def determine_winner(user_choice, computer_choice):
+    """
+    Determines the winner of the game based on user and computer choices.
+    Parameters:
+        user_choice (str): The user's choice.
+        computer_choice (str): The computer's choice.
+    Returns:
+        str: Result of the game ('You win!', 'Computer wins!', or 'It's a tie!').
+    """
     if user_choice == computer_choice:
         return "It's a tie!"
     elif (user_choice == 'rock' and computer_choice == 'scissor') or \
@@ -54,23 +72,24 @@ def determine_winner(user_choice, computer_choice):
     else:
         return "Computer wins!"
 
-# Function to play the game
 def game_play():
-    print("Let's play!")
-
+    """
+    Implements the main game loop allowing continuous play until the user decides to stop.
+    """
+    print("Welcome to Rock-Paper-Scissors! Let's play.")
     while True:
         user_choice = get_user_choice()
-        computer_value = get_computer_choice()
-        print(f"You chose: {user_choice}")  # Prints the user's choice
-        print(f"Computer chose: {computer_value}")  # Prints the computer's choice
-        result = determine_winner(user_choice, computer_value)  # Determines and prints the result
+        computer_choice = get_computer_choice()
+        print(f"You chose: {user_choice}")
+        print(f"Computer chose: {computer_choice}")
+        result = determine_winner(user_choice, computer_choice)
         print(result)
 
         play_again = input("Do you want to play again? (y/n): ").lower()
-        if play_again != "y":  # Breaks the loop if the user doesn't want to play again
+        if play_again != 'y':  # Exit the loop if user chooses not to play again
             break
 
-# Runs the game
+# Starts the game
 game_play()
 ```
 
@@ -105,12 +124,12 @@ game_play()
    Do you want to play again? (y/n): n
    ``` 
 ## Explanation
-In the output, we can see the user can play Rock Paper Scissors against the computer. The computer randomly selects its choice, and the program determines the winner based on the rules.
+This project demonstrates how to implement interactive gameplay by utilizing Python's fundamental concepts like loops, functions, and conditionals. By leveraging the `random` module, we achieve an unpredictable and engaging experience for the user. The modular approach ensures the code is both easy to read and scalable for additional features.
 
 ## Insights
-- The program effectively demonstrates the use of the `random` module for generating random choices.
-- The game logic is simple yet demonstrates control flow with if-elif-else statements.
-- The approach can be extended to include more complex game logic or additional features.
+- **Interactivity** : The use of input/output functions allows for seamless user interaction.
+- **Modularity** : The project is broken into multiple small, reusable functions, adhering to the single-responsibility principle.
+- **Error Handling** : The program effectively manages invalid user inputs, enhancing robustness.
 
 ## Future Enhancements
 
