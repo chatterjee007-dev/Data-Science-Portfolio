@@ -37,7 +37,7 @@ multiplication(num)  # Calling the function we have defined
 
 2. Navigate to the project directory :
    ```bash
-   cd Data-Science-Portfolio/Python/Project_03_Math_Table/Creating_Math_Table.ipynb
+   cd Data-Science-Portfolio/Python/Project_03_Math_Table
 
 3. Run the script :
    ```bash
