@@ -73,7 +73,7 @@ In the output, we can see 'write' is the word that appeared most frequently, and
    git clone https://github.com/chatterjee007-dev/Data-Science-Portfolio.git
 2. Navigate to the project directory :
    ```bash
-   cd Data-Science-Portfolio/Python/Project_02_Counting_Frequency/Counting_Frequency.ipynb
+   cd Data-Science-Portfolio/Python/Project_02_Counting_Frequency
 3. Run the script :
    ```bash
    jupyter notebook Counting_Frequency.ipynb
