@@ -74,25 +74,24 @@ for company, data in stock_data.items():
     print(data.head())
 ```
 
-## Installation
-- To run this project, you will need to install the required libraries. You can install them using pip:
-```bash
-pip install pandas pandas_datareader
-```
-
 ## Prerequisites  
 - Python 3.x installed on your machine.  
 
 ## Installation and Usage  
-1. Clone this repository :  
+
+1. To run this project, you will need to install the required libraries. You can install them using pip:
+    ```bash
+    pip install pandas pandas_datareader
+
+2. Clone this repository :  
    ```bash  
    git clone https://github.com/chatterjee007-dev/Data-Science-Portfolio.git
 
-2. Navigate to the project directory :
+3. Navigate to the project directory :
    ```bash
    cd Data-Science-Portfolio/Python/Project_06_Stock_Prices
 
-3. Run the script :
+4. Run the script :
    ```bash
    jupyter notebook Comparing_Stock_Prices.ipynb
 
