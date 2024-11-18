@@ -62,10 +62,12 @@ print("Is it a valid string? -", result)
    jupyter notebook Finding_Valid_String.ipynb
 
 ## Sample Run
+```python
 Enter a string: anindya
 Characters and their frequency: Counter({'a': 2, 'n': 2, 'i': 1, 'd': 1, 'y': 1})
 List of frequencies of all the characters: [2, 2, 1, 1, 1]
 Is it a valid string? - NO
+```
 
 ## Future Enhancements
 
