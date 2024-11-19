@@ -124,7 +124,7 @@ plt.show()
    git clone https://github.com/chatterjee007-dev/Data-Science-Portfolio.git
 3. Navigate to the project directory:
    ```bash
-   cd Python/Project_09_Data_Visualization
+   cd Data-Science-Portfolio/Python/Project_09_Data_Visualization
 4. Run the script :
    ```bash
    jupyter notebook Data_Visualization.ipynb
