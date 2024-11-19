@@ -1,4 +1,4 @@
-# PYTHON PROJECT: ROCK-PAPER-SCISSORS  
+# Interactive Python Game: Rock-Paper-Scissors Showdown
 
 ## Project Overview  
 This project is a Python-based implementation of the classic game *Rock-Paper-Scissors*. The program allows the user to play the game against the computer. The computer's choice is generated randomly, and the winner is determined based on predefined rules. The goal is to provide an engaging and interactive experience for the user.  
