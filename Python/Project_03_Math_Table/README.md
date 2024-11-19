@@ -23,51 +23,8 @@ The program defines a function `multiplication(num)` that:
 2. **Input Handling**: Takes input from the user to create the multiplication table for the given number.
 3. **Output**: Displays the multiplication table in a formatted way.
 
-## Code Snippet
-```python
-def multiplication(num):
-    """
-    This function generates and prints the multiplication table of a given number.
-    """
-    for i in range(1, 11):  # Iterates through numbers 1 to 10 to create the table
-        result = i * num  # Calculates the product of the current number (i) and the input number (num)
-        print(f"{i} x {num} = {result}")  # Outputs the multiplication in a formatted string
-
-# Prompting the user for a number to generate its multiplication table
-num = int(input("Enter a number: "))  
-multiplication(num)  # Calls the function to display the multiplication table
-```
-
 ## Prerequisites  
 - Python 3.x installed on your machine.  
-
-## Installation and Usage  
-1. Clone this repository :  
-   ```bash  
-   git clone https://github.com/chatterjee007-dev/Data-Science-Portfolio.git
-
-2. Navigate to the project directory :
-   ```bash
-   cd Data-Science-Portfolio/Python/Project_03_Math_Table
-
-3. Run the script :
-   ```bash
-   jupyter notebook Creating_Math_Table.ipynb
-
-## Sample Run
-```python
-Enter a number: 49
-1 x 49 = 49
-2 x 49 = 98
-3 x 49 = 147
-4 x 49 = 196
-5 x 49 = 245
-6 x 49 = 294
-7 x 49 = 343
-8 x 49 = 392
-9 x 49 = 441
-10 x 49 = 490
-```
 
 ## Explanation
 - The program asks the user to enter an integer.
@@ -91,6 +48,3 @@ Enter a number: 49
 
 7. **Input Validation** :
    - Improve input validation to handle non-integer inputs gracefully.
-
-## View on GitHub
-- You can view this project on GitHub: [[Data-Science-Portfolio]](https://github.com/chatterjee007-dev/Data-Science-Portfolio/tree/main) under the directory **Python/Project_03_Math_Table/Creating_Math_Table.ipynb**.
