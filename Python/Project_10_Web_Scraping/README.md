@@ -86,7 +86,7 @@ for i, table in enumerate(tables, start=1):
    git clone https://github.com/chatterjee007-dev/Data-Science-Portfolio.git
 3. Navigate to the project directory:
    ```bash
-   cd Python/Project_10_Web_Scraping
+   cd Data-Science-Portfolio/Python/Project_10_Web_Scraping
 4. Run the script :
    ```bash
    jupyter notebook Web_Scraping.ipynb
