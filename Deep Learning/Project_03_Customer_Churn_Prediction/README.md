@@ -1,4 +1,4 @@
-# Deep Learning Project 3 - Customer Churn Prediction
+# Deep Learning Project - Customer Churn Prediction
 
 ## Project Overview
 This project involves predicting whether or not a customer is likely to churn using a deep learning model. The task is to choose an appropriate algorithm for predicting customer churn based on the available data, and to evaluate the performance of the model using metrics such as accuracy, precision, recall, and F1 score.
