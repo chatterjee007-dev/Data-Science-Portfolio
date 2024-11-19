@@ -1,4 +1,4 @@
-# Python Project: Creating Mathematical Table of Any Number
+# Multiplication Table Generator: Dynamic Python Solution
 
 ## Project Overview
 This project is designed to generate a multiplication table for any given integer. The program takes an integer as input and displays its multiplication table from 1 to 10.
