@@ -1,4 +1,4 @@
-# Deep Learning Project - 1: CNN Model Architecture
+# Deep Learning Project : CNN Model Architecture
 
 ## Project Overview
 This project involves implementing and comparing three different Convolutional Neural Network (CNN) architectures using the TensorFlow library. The models are trained and evaluated on the CIFAR-10 dataset, with a summary report comparing their performance.
