@@ -84,7 +84,7 @@ print("Feature Importance:\n", feature_importance.head(5))
    git clone https://github.com/chatterjee007-dev/Data-Science-Portfolio.git
 3. Navigate to the project directory :
    ```bash
-   cd Python/Project_07_FIFA_19_Data_Analysis
+   cd Data-Science-Portfolio/Python/Project_07_FIFA_19_Data_Analysis
 4. Run the script :
    ```bash
    jupyter notebook FIFA_19_Data_Analysis.ipynb
