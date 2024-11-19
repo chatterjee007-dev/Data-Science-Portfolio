@@ -1,4 +1,4 @@
-# Python Project: Comparing Stock Prices
+# Comparative Analysis of Tech Giants: Stock Price Performance and Trend Analysis
 
 ## Project Overview
 This project compares the stock prices of APPLE, GOOGLE, MICROSOFT, and AMAZON. It retrieves historical stock prices, calculates percentage changes over a specified period, and identifies the best-performing stock. Additionally, it analyzes trends in the data.
@@ -29,71 +29,8 @@ The project performs the following steps:
 - **Percentage Change Calculation**: Computes and displays percentage changes in stock prices.
 - **Trend Analysis**: Shows historical stock prices for trend exploration.
 
-## Code Snippet
-```python
-import pandas as pd
-import pandas_datareader.data as web
-from datetime import datetime
-
-# Dictionary of companies and their stock symbols
-companies = {
-    'Apple': 'AAPL',
-    'Google': 'GOOGL',
-    'Microsoft': 'MSFT',
-    'Amazon': 'AMZN'
-}
-
-# Date Range Definition
-start_date = datetime(2023, 1, 1)
-end_date = datetime(2023, 12, 31)
-
-# Retrieve stock data
-stock_data = {}
-for company, symbol in companies.items():
-    df = web.DataReader(symbol, 'stooq', start_date, end_date)
-    stock_data[company] = df
-
-# Calculating percentage changes in stock prices
-percentage_change = {}
-for company, data in stock_data.items():
-    initial_price = data['Close'].iloc[0]
-    final_price = data['Close'].iloc[-1]
-    percentage_change[company] = ((final_price - initial_price) / initial_price) * 100
-
-# Displaying results
-print("Percentage change in stock prices:")
-for company, change in percentage_change.items():
-    print(f"{company}: {change:.2f}%")
-
-best_performer = max(percentage_change, key=percentage_change.get)
-print(f"Best performer: {best_performer} with {percentage_change[best_performer]:.2f}% change.")
-
-# Analyzing trends in stock data
-for company, data in stock_data.items():
-    print(f"\nHistorical stock prices for {company}:")
-    print(data.head())
-```
-
 ## Prerequisites  
 - Python 3.x installed on your machine.  
-
-## Installation and Usage  
-
-1. To run this project, you will need to install the required libraries. You can install them using pip:
-    ```bash
-    pip install pandas pandas_datareader
-
-2. Clone this repository :  
-   ```bash  
-   git clone https://github.com/chatterjee007-dev/Data-Science-Portfolio.git
-
-3. Navigate to the project directory :
-   ```bash
-   cd Data-Science-Portfolio/Python/Project_06_Stock_Prices
-
-4. Run the script :
-   ```bash
-   jupyter notebook Comparing_Stock_Prices.ipynb
 
 ## Sample Run
 ### Percentage Change in Stock Prices
@@ -178,6 +115,3 @@ The output shows that all four companies experienced significant declines in the
    - Compare the performance of these companies against their respective sectors.  
 5. **Predictive Analysis**:  
    - Implement machine learning models to forecast future stock price trends.  
-
-## View on GitHub
-- You can view this project on GitHub : [Data-Science-Portfolio](https://github.com/chatterjee007-dev/Data-Science-Portfolio/tree/main) under the directory **Python/Project_06_Stock_Prices/Comparing_Stock_Prices.ipynb**.
