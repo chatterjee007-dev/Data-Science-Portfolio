@@ -1,4 +1,4 @@
-# Deep Learning Project 4 - Hand Written Digit Prediction
+# Deep Learning Project - Hand Written Digit Prediction
 
 ## Project Overview
 This project involves creating a machine learning model to recognize handwritten digits using the MNIST dataset. The program handles a labeled dataset of 60,000 images and trains multiple models, comparing their accuracy in recognizing handwritten digits. The evaluation is based on metrics like accuracy and F1 score.
