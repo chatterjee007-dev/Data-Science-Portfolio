@@ -75,7 +75,7 @@ print(summary_report)
    git clone https://github.com/chatterjee007-dev/Data-Science-Portfolio.git
 3. Navigate to the project directory:
    ```bash
-   cd Python/Project_08_Supply_Chain_Shipment_Analysis
+   cd Data-Science-Portfolio/Python/Project_08_Supply_Chain_Shipment_Analysis
 4. Run the script :
    ```bash
    jupyter notebook Supply_Chain_Shipment_Analysis.ipynb
