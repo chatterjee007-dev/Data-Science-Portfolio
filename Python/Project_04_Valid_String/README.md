@@ -1,4 +1,4 @@
-# Python Project: Finding Valid String
+# Valid String Checker: Character Frequency Analysis in Python
 
 ## Project Overview
 This project determines whether a string is "valid" based on the frequency of its characters. A string is valid if:
@@ -25,61 +25,8 @@ This project determines whether a string is "valid" based on the frequency of it
 - **check_valid Function**: This function checks whether the string is valid based on the conditions mentioned.
 - **Input Handling**: The program takes user input and calls the `check_valid` function to evaluate the string.
 
-## Code Snippet
-
-```python
-from collections import Counter
-
-def check_valid(string):
-    # Count the frequency of each character
-    char_count = Counter(string)
-    print("Characters and their frequency:", char_count)
-    
-    # List of character frequencies
-    count = list(char_count.values())
-    print("List of frequencies of all the characters:", count)
-    
-    # If all characters appear the same number of times
-    if len(set(count)) == 1:
-        return "YES"
-
-    # Check if removing one character results in the same frequency for all other characters
-    for i in range(len(count)):
-        new_count = count[:i] + count[i+1:]
-        if len(set(new_count)) == 1:
-            return "YES"
-
-    return "NO"
-
-# Taking input from the user
-words = input("Enter a string: ")
-result = check_valid(words)
-print("Is it a valid string? -", result)
-```
-
 ## Prerequisites  
 - Python 3.x installed on your machine.
-
-## Installation and Usage
-1. To run this project, ensure that you have Python installed and the required libraries available. The `collections` module is part of the Python standard library, so no additional installation is required.
-2. Clone this repository :
-   ```bash
-   git clone https://github.com/chatterjee007-dev/Data-Science-Portfolio.git
-3. Navigate to the project directory :
-   ```bash
-   cd Data-Science-Portfolio/Python/Project_04_Valid_String
-4. Run the script :
-   ```bash
-   jupyter notebook Finding_Valid_String.ipynb
-
-## Sample Run
-Input
-```python
-Enter a string: anindya
-Characters and their frequency: Counter({'a': 2, 'n': 2, 'i': 1, 'd': 1, 'y': 1})
-List of frequencies of all the characters: [2, 2, 1, 1, 1]
-Is it a valid string? - NO
-```
 
 ## Explanation
 The string "anindya" has characters 'a' and 'n' appearing twice, while 'i', 'd', and 'y' appear once. Removing one of the characters with frequency 1 doesn't make the frequencies equal, so the result is "NO".
@@ -101,6 +48,3 @@ The string "anindya" has characters 'a' and 'n' appearing twice, while 'i', 'd',
 
 4. **Integration** :
    - Integrate this validation into text preprocessing pipelines for data cleaning tasks.
-
-## View on GitHub
-- You can view this project on GitHub: [[Data-Science-Portfolio]](https://github.com/chatterjee007-dev/Data-Science-Portfolio/tree/main) under the directory **Python/Project_04_Valid_String/Finding_Valid_String.ipynb.**
